@@ -1,4 +1,9 @@
 package com.app.ecom.service;
 
-public class OrderService {
+import com.app.ecom.dto.OrderResponse;
+
+import java.util.Optional;
+
+public interface OrderService {
+    Optional<OrderResponse> createorder(String userId);
 }
